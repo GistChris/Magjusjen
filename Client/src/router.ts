@@ -17,8 +17,12 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: () => import("@/components/Shop.vue"),
+      component: () => import("@/components/Home.vue"),
     },
+    // {
+    //   path: "/",
+    //   component: () => import("@/components/Shop.vue"),
+    // },
     { path: "/shop", component: Shop },
     { path: "/send", component: SendingPage },
     { path: "/product/:sku", component: SelectedProduct, props: true },
