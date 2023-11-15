@@ -12,17 +12,17 @@
 <template>
 <div class="sp-container">
     <div class="sp-content">
-      <div class="sp-globe"></div>
+      <!-- <div class="sp-globe"></div> -->
       <h2 class="frame-1">AWESOME</h2>
       <h2 class="frame-2">TEXT ANIMATION EFFECT</h2>
       <h2 class="frame-3">BUILD WITH CSS3</h2>
       <h2 class="frame-4">TEST IT!</h2>
       <h2 class="frame-5">
-        <span>FORK,</span>
-        <span>CHANGE,</span>
-        <span>EXPERIANCE.</span>
+        <span>M A G J U S J E N</span>
+        <span>I N T E R T A I N M E N T</span>
+        <span>P R E S E N T</span>
       </h2>
-      <a class="sp-circle-link" href="https://nick.mkrtchyan.ga">by Nick</a>
+      <a class="sp-circle-link" href="https://nick.mkrtchyan.ga">Lorenzetti</a>
     </div>
   </div>
   </template>
@@ -36,6 +36,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Barlow', sans-serif;
+}
+span{
+    margin-left:20px;
 }
 .container {
   width: 100%;
@@ -73,11 +76,13 @@ h1.main, p.demos {
 }
 .sp-container h2 {
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
+  top: 11%;
   line-height: 100px;
   height: 90px;
   margin-top: -50px;
-  font-size: 90px;
+  /* font-size: 90px; */
+  font-size: 40px;
   width: 100%;
   text-align: center;
   color: transparent;
@@ -105,7 +110,8 @@ h1.main, p.demos {
   animation-delay: 6s;
 }
 .sp-container h2.frame-4 {
-  font-size: 200px;
+  /* font-size: 200px; */
+  font-size: 50px;
   -webkit-animation-delay: 9s;
   -moz-animation-delay: 9s;
   -ms-animation-delay: 9s;
@@ -171,7 +177,8 @@ h1.main, p.demos {
   height: 100px;
   background: #fff;
   color: #3f1616;
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-size: 20px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;

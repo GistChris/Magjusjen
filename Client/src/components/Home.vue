@@ -5,6 +5,7 @@ import Product from "./Products/Product.vue";
 import Pagination from "./Widgets/Pagination.vue";
 import Titre from "./Widgets/Titre.vue";
 import Animation from  "./Widgets/Animation.vue";
+import Menu from  "./Widgets/HamburgerMenu.vue";
 import ItemsPerPageSelector from "./Widgets/ItemsPerPageSelector.vue";
 import { locale } from "../data/config.ts";
 import Filters from "./Filters/Filters.vue";
@@ -89,70 +90,25 @@ onMounted(() => {
 </script>
 
 <template>
-<div class="home-wrapper">
-    <div class="titre">
-    <!-- <Titre :text="viewMode === 'default' ? 'Produits' : 'Offres'" size="64px"></Titre> -->
-    <Titre text="M A G J U S J E N  " size="34px"></Titre>
-
-    <Titre text="I N T E R T A I N M E N T" size="34px"></Titre>
-</div>
-</div>
-<Animation>
-
+    <Animation>
 </Animation>
-    
+<!-- <div class="home-wrapper"> -->
+    <!-- <div class="titre"> -->
+    <!-- <Titre :text="viewMode === 'default' ? 'Produits' : 'Offres'" size="64px"></Titre> -->
+    <!-- <Titre text="M A G J U S J E N  " size="34px"></Titre> -->
 
+    <!-- <Titre text="I N T E R T A I N M E N T" size="34px"></Titre> -->
+<!-- </div> -->
+<!-- </div> -->
+<Menu></Menu>
 
-  <!-- <div class="shop-wrapper" :class="{ fade: animate }">
-    <div class="div1">
-      <div class="titre">
-        <Titre text="Filtres" size="64px"></Titre>
-      </div>
-      <ProductControls
-        :filterText="filterText"
-        :filterCriteria="filterCriteria"
-        @toggle-view="toggleView"
-        @update-filter-text="filterText = $event"
-        @update-filter-criteria="filterCriteria = $event"
-        @update-sort="handleSort"
-      />
-      <Filters></Filters>
-    </div>
-    <div class="div2">
-      <div class="products-container">
-        <div class="product-box">
-          <div class="titre">
-            <Titre :text="viewMode === 'default' ? 'Produits' : 'Offres'" size="64px"></Titre>
-
-            <div class="itemsPP">
-              <ItemsPerPageSelector
-                :items-per-page="paginationStore.itemsPerPage"
-                @update-items-per-page="paginationStore.itemsPerPage = $event"
-              />
-            </div>
-          </div>
-        </div>
-
-        <Product
-          v-for="product in paginatedProducts"
-          :key="product.sku"
-          :product="product"
-          @add-cart-product="(sku) => cartStore.addCartProduct(sku)"
-          @select-product="(sku) => cartStore.selectProduct(sku)"
-          @remove-sale-product="
-            (sku) => {
-              productsStore.remove(sku);
-            }
-          "
-          :locale="locale"
-        />
-      </div>
-      <Pagination :current-page="paginationStore.currentPage" :last-page="paginationStore.lastPage" />
-    </div>
-  </div> -->
 </template>
 
 <style scoped>
+/*  */
+/* page styling */
+
+/*  */
 .home-wrapper{
     padding-top:30px;
     display: flex;
