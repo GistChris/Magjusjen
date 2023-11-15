@@ -7,7 +7,8 @@ const url = "cluster0.rbklztt.mongodb.net";
 const params = "?retryWrites=true&w=majority";
 const username = "User";
 const password = "pw4User$";
-const database = "DAWTA-AUTH";
+// const database = "DAWTA-AUTH";
+const database = "MAGJUSJEN";
 
 export const connectionString = `${protocol}://${username}:${password}@${url}/${database}${params}`;
 
