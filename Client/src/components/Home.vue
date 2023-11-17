@@ -4,8 +4,8 @@ import { ref, computed, toRefs, watch, onMounted } from "vue";
 import Product from "./Products/Product.vue";
 import Pagination from "./Widgets/Pagination.vue";
 import Titre from "./Widgets/Titre.vue";
-import Animation from  "./Widgets/Animation.vue";
-import Menu from  "./Widgets/HamburgerMenu.vue";
+import Animation from "./Widgets/Animation.vue";
+import Menu from "./Widgets/HamburgerMenu.vue";
 import ItemsPerPageSelector from "./Widgets/ItemsPerPageSelector.vue";
 import { locale } from "../data/config.ts";
 import Filters from "./Filters/Filters.vue";
@@ -15,7 +15,6 @@ import ProductControls from "./Widgets/ProductControls.vue";
 import { useProducts } from "../stores/productsStore";
 import { usePaginationStore } from "../stores/paginationStore";
 import { useCartStore } from "../stores/cartStore";
-
 
 const cartStore = useCartStore();
 const productsStore = useProducts();
@@ -90,18 +89,16 @@ onMounted(() => {
 </script>
 
 <template>
-    <Animation>
-</Animation>
-<!-- <div class="home-wrapper"> -->
-    <!-- <div class="titre"> -->
-    <!-- <Titre :text="viewMode === 'default' ? 'Produits' : 'Offres'" size="64px"></Titre> -->
-    <!-- <Titre text="M A G J U S J E N  " size="34px"></Titre> -->
+  <Animation></Animation>
+  <!-- <div class="home-wrapper"> -->
+  <!-- <div class="titre"> -->
+  <!-- <Titre :text="viewMode === 'default' ? 'Produits' : 'Offres'" size="64px"></Titre> -->
+  <!-- <Titre text="M A G J U S J E N  " size="34px"></Titre> -->
 
-    <!-- <Titre text="I N T E R T A I N M E N T" size="34px"></Titre> -->
-<!-- </div> -->
-<!-- </div> -->
-<Menu></Menu>
-
+  <!-- <Titre text="I N T E R T A I N M E N T" size="34px"></Titre> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <Menu></Menu>
 </template>
 
 <style scoped>
@@ -109,14 +106,14 @@ onMounted(() => {
 /* page styling */
 
 /*  */
-.home-wrapper{
-    padding-top:30px;
-    display: flex;
-    flex-direction: column;
+.home-wrapper {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
-.titre{
-    display: flex;
-    gap:30px;
+.titre {
+  display: flex;
+  gap: 30px;
 }
 
 .itemsPP {
@@ -133,8 +130,7 @@ onMounted(() => {
   background-color: var(--bg-color-bg);
 }
 
-.div1
-{
+.div1 {
   flex-direction: column;
   flex: 1;
 }

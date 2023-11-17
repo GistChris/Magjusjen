@@ -66,6 +66,7 @@
   top: 5vh;
   right: 5vw;
   z-index: 2000;
+  /* correction */
   box-shadow: 0 1rem 3rem black;
   text-align: center;
   cursor: pointer;
@@ -77,6 +78,8 @@
   position: fixed; */
   /* top: 5.5vh; */
   /* right: 5.5vw; */
+  /* height: 1rem; */
+  /* correction */
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
@@ -84,17 +87,21 @@
   top: 5.5vh;
   right: 5.5vw;
   /* background-image: radial-gradient(green, black); */
-  background-image: radial-gradient(rgba(255, 255, 255, 0.2), black);
-  backdrop-filter: blur(8px);
+  /* correction background */
+  /* background-image: radial-gradient(rgba(255, 255, 255, 0.2), black); */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.288));
+  backdrop-filter: blur(4px);
   z-index: 1000;
-
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  /* correction */
+  /* transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); */
+  transition: transform 0.8s cubic-bezier(0.46, 0, 0.07, 0.5);
 }
 
 .nav {
   height: 100vh;
   position: fixed;
   top: 0;
+  /* correction */
   right: -60vw;
   z-index: 1500;
   opacity: 0;
@@ -119,7 +126,7 @@
   text-shadow: 0 0 8px #464545;
   color: transparent;
   /* font-size: 36px; */
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 
 .link:link,
@@ -134,6 +141,7 @@
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
   background-size: 220%;
+  /* background-size: 10%; */
   /* transition: all 0.4s; */
   transition: all 0.8s;
   /* backdrop-filter: blur(800px);  */
@@ -145,7 +153,7 @@
   transition: all 0.6s;
   /* color: lightgreen; */
   color: lightgray;
-  
+
   font-size: 5rem;
   cursor: pointer;
 }

@@ -4,6 +4,11 @@ import { isAuthenticatedGuard, isNotAuthenticatedGuard } from "@/shared/guards";
 import NotFound from "./components/NotFind.vue";
 import SendingPage from "./components/Widgets/SendingPage.vue";
 import Shop from "./components/Shop.vue";
+import Home from "./components/Home.vue";
+import Events from "./components/Events/EventsList.vue";
+import Sponsors from "./components/Sponsors.vue";
+import AboutUs from "./components/AboutUs.vue";
+import Newsletter from "./components/Newsletter.vue";
 import Offres from "./components/Offres.vue";
 import Share from "./components/Share.vue";
 import Panier from "./components/Panier.vue";
@@ -23,6 +28,13 @@ const router = createRouter({
     //   path: "/",
     //   component: () => import("@/components/Shop.vue"),
     // },
+    //////////////////////////////////////////
+    { path: "/home", component: Home },
+    { path: "/events", component: Events },
+    { path: "/sponsors", component: Sponsors },
+    { path: "/newsletter", component: Newsletter },
+    { path: "/aboutus", component: AboutUs },
+    ///////////////////////////////////////////////
     { path: "/shop", component: Shop },
     { path: "/send", component: SendingPage },
     { path: "/product/:sku", component: SelectedProduct, props: true },

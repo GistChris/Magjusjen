@@ -12,7 +12,7 @@
 <template>
 <div class="sp-container">
     <div class="sp-content">
-      <!-- <div class="sp-globe"></div> -->
+      <div class="sp-globe"></div>
       <h2 class="frame-1">AWESOME</h2>
       <h2 class="frame-2">TEXT ANIMATION EFFECT</h2>
       <h2 class="frame-3">BUILD WITH CSS3</h2>
