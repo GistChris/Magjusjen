@@ -8,21 +8,49 @@
 //   iconSize?: string;
 // }>();
 // const computedIconSize = props.iconSize || "2rem";
+const props = defineProps<{
+  frameText1?: string;
+  frameText2?: string;
+  frameText3?: string;
+  frameText4?: string;
+  sizeText1?: string;
+  sizeText2?: string;
+  sizeText3?: string;
+  sizeText4?: string;
+  titreText1?: string;
+  titreText2?: string;
+  titreText3?: string;
+  titreCircle?: string;
+  sizeCircle?: string;
+  // buttonText?: string;
+  // buttonColor?: string;
+  // buttonHoverColor?: string;
+  // imageSrc?: string;
+  // iconId?: string;
+  // iconSize?: string;
+}>();
 </script>
 <template>
 <div class="sp-container">
     <div class="sp-content">
       <div class="sp-globe"></div>
-      <h2 class="frame-1">AWESOME</h2>
+      <h2 class="frame-1">{{ frameText1 }}</h2>
+      <h2 class="frame-2">{{ frameText2 }}</h2>
+      <h2 class="frame-3">{{ frameText3 }}</h2>
+      <h2 class="frame-4">{{ frameText4 }}</h2>
+      <!-- <h2 class="frame-1">AWESOME</h2>
       <h2 class="frame-2">TEXT ANIMATION EFFECT</h2>
       <h2 class="frame-3">BUILD WITH CSS3</h2>
-      <h2 class="frame-4">TEST IT!</h2>
+      <h2 class="frame-4">TEST IT!</h2> -->
       <h2 class="frame-5">
-        <span>M A G J U S J E N</span>
-        <span>I N T E R T A I N M E N T</span>
-        <span>P R E S E N T</span>
+        <span class="titre-1">{{ titreText1 }}</span>
+        <span class="titre-2">{{ titreText2 }}</span>
+        <span class="titre-3">{{ titreText3 }}</span>
+        <!-- <span class="titre-1">M A G J U S J E N</span>
+        <span class="titre-2">I N T E R T A I N M E N T</span>
+        <span class="titre-3">P R E S E N T</span> -->
       </h2>
-      <a class="sp-circle-link" href="https://nick.mkrtchyan.ga">Lorenzetti</a>
+      <a class="sp-circle-link" href="https://nick.mkrtchyan.ga">{{ titreCircle }}</a>
     </div>
   </div>
   </template>
@@ -37,14 +65,29 @@ body {
   background-size: cover;
   font-family: 'Barlow', sans-serif;
 }
-span{
+.sp-circle-link {
+  font-size: v-bind(sizeCircle);
+}
+.frame-1 {
+  font-size: v-bind(sizeText1);
+}
+.frame-2 {
+  font-size: v-bind(sizeText2);
+}
+.frame-3 {
+  font-size: v-bind(sizeText3);
+}
+.frame-4 {
+  font-size: v-bind(sizeText4);
+}
+/* .titre{
     margin-left:20px;
 }
 .container {
   width: 100%;
   position: relative;
   overflow: hidden;
-}
+} */
 a {
   text-decoration: none;
 }

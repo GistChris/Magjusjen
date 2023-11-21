@@ -89,7 +89,21 @@ onMounted(() => {
 </script>
 
 <template>
-  <Animation></Animation>
+  <Animation
+    frame-text1="Hello"
+    frame-text2="Magjusjen!"
+    frame-text3="Yours"
+    frame-text4="New site"
+    titre-text1="MAGJUSJEN"
+    titre-text2=" INTERTAINMENT"
+    titre-text3=" PRESENT"
+    size-text1="45"
+    size-text2="45"
+    size-text3="45"
+    size-text4="45"
+    titre-circle="Berry"
+    size-circle="12"
+  ></Animation>
   <!-- <div class="home-wrapper"> -->
   <!-- <div class="titre"> -->
   <!-- <Titre :text="viewMode === 'default' ? 'Produits' : 'Offres'" size="64px"></Titre> -->
@@ -98,7 +112,7 @@ onMounted(() => {
   <!-- <Titre text="I N T E R T A I N M E N T" size="34px"></Titre> -->
   <!-- </div> -->
   <!-- </div> -->
-  <Menu></Menu>
+  <Menu text-link1="Events" text-link2="NewsLetter" text-link3="Sponsors" text-link4="About us"></Menu>
 </template>
 
 <style scoped>

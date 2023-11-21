@@ -2,11 +2,13 @@
 import { RouterLink } from "vue-router";
 import Titre from "../Widgets/Titre.vue";
 import Button from "../Widgets/Button.vue";
+import Menu from "../Widgets/HamburgerMenu.vue";
 </script>
 <template>
   <div class="wrong-url">
+    <Menu text-link2="NewsLetter" text-link3="Sponsors" text-link4="About us"></Menu>
     <RouterLink to="/shop">
-      <Titre text="Page introuvable" size="84px" style="color: red;"></Titre>
+      <Titre text="Events" size="84px" style="color: red;"></Titre>
     </RouterLink>
  
   <RouterLink to="/home">

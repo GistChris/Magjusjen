@@ -1,12 +1,17 @@
 <script setup lang="ts">
-// const props = defineProps<{
-//   buttonText?: string;
-//   buttonColor?: string;
-//   buttonHoverColor?: string;
-//   imageSrc?: string;
-//   iconId?: string;
-//   iconSize?: string;
-// }>();
+const props = defineProps<{
+  textLink1?: string;
+  textLink2?: string;
+  textLink3?: string;
+  textLink4?: string;
+  textLink5?: string;
+  // buttonText?: string;
+  // buttonColor?: string;
+  // buttonHoverColor?: string;
+  // imageSrc?: string;
+  // iconId?: string;
+  // iconSize?: string;
+}>();
 // const computedIconSize = props.iconSize || "2rem";
 </script>
 <template>
@@ -19,11 +24,26 @@
   <!-- nav -->
   <nav class="nav">
     <ul class="list">
-      <!-- <li class="item"><a class="link">  </a></li> -->
-      <li class="item"><a class="link"> Events </a></li>
-      <li class="item"><a class="link"> NewsLetter </a></li>
-      <li class="item"><a class="link"> Sponsors </a></li>
-      <li class="item"><a class="link"> About us </a></li>
+      <RouterLink to="/events">
+        <li class="item">
+          <a class="link">{{ textLink1 }} </a>
+        </li>
+      </RouterLink>
+      <RouterLink to="/newsletter">
+        <li class="item">
+          <a class="link">{{ textLink2 }} </a>
+        </li>
+      </RouterLink>
+      <RouterLink to="/sponsors">
+        <li class="item">
+          <a class="link"> {{ textLink3 }} </a>
+        </li>
+      </RouterLink>
+      <RouterLink to="/aboutus">
+        <li class="item">
+          <a class="link"> {{ textLink4 }} </a>
+        </li>
+      </RouterLink>
     </ul>
   </nav>
 </template>
@@ -133,6 +153,7 @@
 .link:visited {
   display: inline-block;
   font-size: 3rem;
+  /* font-size: 3px; */
   font-weight: 300;
   padding: 1rem 2rem;
   color: white;
@@ -154,7 +175,7 @@
   /* color: lightgreen; */
   color: lightgray;
 
-  font-size: 5rem;
+  font-size: 3.8rem;
   cursor: pointer;
 }
 

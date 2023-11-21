@@ -24,19 +24,33 @@ const signOut = async () => {
   </div>
 </template>
 <style scoped>
+
 .app-container {
   min-height: 100vh;
   /* background-color: rgb(149, 173, 218); */
  
   background-image: url(./assets/background.jpg);
   background-size: cover;
- 
+  /* header { */
+  opacity: 0;
+  animation: ani 2.5s forwards;
+/* } */
+
+}
+.flex-fill{
+  opacity: 0;
+  animation: ani 5.5s forwards; 
+}
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 .blur {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px); 
   height: 100vh;
   width: 100%;
+
 }
 /* .blur{
   backdrop-filter: blur(20px) saturate(120%) contrast(200%);

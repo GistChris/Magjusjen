@@ -37,11 +37,11 @@ const router = createRouter({
     ///////////////////////////////////////////////
     { path: "/shop", component: Shop },
     { path: "/send", component: SendingPage },
-    { path: "/product/:sku", component: SelectedProduct, props: true },
-    { path: "/share", component: Share },
-    { path: "/address/:index", component: UpdateAddressVue, props: true },
-    { path: "/payment/:index", component: UpdatePaymentVue, props: true },
-    { path: "/commande/:index", component: UpdateCommandeVue, props: true },
+    // { path: "/product/:sku", component: SelectedProduct, props: true },
+    // { path: "/share", component: Share },
+    // { path: "/address/:index", component: UpdateAddressVue, props: true },
+    // { path: "/payment/:index", component: UpdatePaymentVue, props: true },
+    // { path: "/commande/:index", component: UpdateCommandeVue, props: true },
 
     {
       path: "/signin",
