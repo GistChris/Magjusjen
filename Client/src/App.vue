@@ -39,7 +39,7 @@ const signOut = async () => {
 }
 .flex-fill{
   opacity: 0;
-  animation: ani 5.5s forwards; 
+  animation: ani 2.5s forwards; 
 }
 @keyframes ani {
   0% {opacity: 0;}

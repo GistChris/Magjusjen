@@ -89,14 +89,18 @@ onMounted(() => {
 </script>
 
 <template>
+  <div class="home">
+     <video autoplay loop muted class="bgvideo" id="bgvideo">
+   <source src="/src/assets/video/mariage1.mp4" type="video/mp4">
+  </video>
   <Animation
-    frame-text1="Hello"
-    frame-text2="Magjusjen!"
-    frame-text3="Yours"
-    frame-text4="New site"
-    titre-text1="MAGJUSJEN"
-    titre-text2=" INTERTAINMENT"
-    titre-text3=" PRESENT"
+    frame-text1="Bienvenue au"
+    frame-text2="Maison Principale!"
+    frame-text3="A Votre"
+    frame-text4="Service!"
+    titre-text1="Maison"
+    titre-text2=" Principale"
+    titre-text3=" avec l,Amour de Gaby!"
     size-text1="45"
     size-text2="45"
     size-text3="45"
@@ -112,7 +116,8 @@ onMounted(() => {
   <!-- <Titre text="I N T E R T A I N M E N T" size="34px"></Titre> -->
   <!-- </div> -->
   <!-- </div> -->
-  <Menu text-link1="Events" text-link2="NewsLetter" text-link3="Sponsors" text-link4="About us"></Menu>
+  <Menu text-link1="Events" text-link2="NewsLetter" text-link3="Sponsors" text-link4="About us" text-link5="Gallery"></Menu>
+</div>
 </template>
 
 <style scoped>
@@ -120,6 +125,20 @@ onMounted(() => {
 /* page styling */
 
 /*  */
+.home{
+  background: url('video.png');
+  background-size: cover;
+}
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
 .home-wrapper {
   padding-top: 30px;
   display: flex;

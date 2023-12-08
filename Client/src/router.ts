@@ -8,6 +8,7 @@ import Home from "./components/Home.vue";
 import Events from "./components/Events/EventsList.vue";
 import Sponsors from "./components/Sponsors.vue";
 import AboutUs from "./components/AboutUs.vue";
+import Gallery from "./components/Gallery.vue";
 import Newsletter from "./components/Newsletter.vue";
 import Offres from "./components/Offres.vue";
 import Share from "./components/Share.vue";
@@ -31,6 +32,7 @@ const router = createRouter({
     //////////////////////////////////////////
     { path: "/home", component: Home },
     { path: "/events", component: Events },
+    { path: "/gallery", component: Gallery },
     { path: "/sponsors", component: Sponsors },
     { path: "/newsletter", component: Newsletter },
     { path: "/aboutus", component: AboutUs },

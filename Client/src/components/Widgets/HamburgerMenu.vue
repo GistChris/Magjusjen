@@ -44,6 +44,11 @@ const props = defineProps<{
           <a class="link"> {{ textLink4 }} </a>
         </li>
       </RouterLink>
+      <RouterLink to="/gallery">
+        <li class="item">
+          <a class="link"> {{ textLink5 }} </a>
+        </li>
+      </RouterLink>
     </ul>
   </nav>
 </template>

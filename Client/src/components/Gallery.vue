@@ -6,12 +6,12 @@ import Menu from "./Widgets/HamburgerMenu.vue";
 </script>
 <template>
   <div class="wrong-url">
-    <Menu text-link1="Events" text-link2="NewsLetter"  text-link4="About us" text-link5="Gallery"></Menu>
+    <Menu text-link1="Events" text-link2="NewsLetter" text-link3="Sponsors" text-link4="About us"></Menu>
     <RouterLink to="/shop">
-      <Titre text="Sponsors" size="84px" style="color: red;"></Titre>
+      <Titre text="Gallery" size="84px" style="color: red"></Titre>
     </RouterLink>
- 
-  <RouterLink to="/home">
+
+    <RouterLink to="/home">
       <Button
         buttonText="Retour home"
         buttonColor="var(--button-color)"
@@ -23,7 +23,7 @@ import Menu from "./Widgets/HamburgerMenu.vue";
   </div>
 </template>
 <style scoped>
-.wrong-url{
+.wrong-url {
   display: flex;
   flex-direction: column;
   align-items: center;
