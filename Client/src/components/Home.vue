@@ -6,6 +6,7 @@ import Pagination from "./Widgets/Pagination.vue";
 import Titre from "./Widgets/Titre.vue";
 import Animation from "./Widgets/Animation.vue";
 import Menu from "./Widgets/HamburgerMenu.vue";
+// import Map from "./Widgets/GoogleMaps.vue";
 import ItemsPerPageSelector from "./Widgets/ItemsPerPageSelector.vue";
 import { locale } from "../data/config.ts";
 import Filters from "./Filters/Filters.vue";
@@ -100,7 +101,7 @@ onMounted(() => {
     frame-text4="Service!"
     titre-text1="Maison"
     titre-text2=" Principale"
-    titre-text3=" avec l,Amour de Gaby!"
+    titre-text3=" avec l,Amour!"
     size-text1="45"
     size-text2="45"
     size-text3="45"
@@ -116,15 +117,13 @@ onMounted(() => {
   <!-- <Titre text="I N T E R T A I N M E N T" size="34px"></Titre> -->
   <!-- </div> -->
   <!-- </div> -->
-  <Menu text-link1="Events" text-link2="NewsLetter" text-link3="Sponsors" text-link4="About us" text-link5="Gallery"></Menu>
+  <Menu text-link1="Events" text-link2="NewsLetter" text-link3="Sponsors" text-link4="About us" text-link5="Gallery" text-link6="Testimonials"></Menu>
 </div>
+<!-- <a id="map" mapdata-fancybox="" data-options="{&quot;iframe&quot; : {&quot;css&quot; : {&quot;width&quot; : &quot;80%&quot;, &quot;height&quot; : &quot;80%&quot;}}}" href="https://www.google.com/maps/search/?api=1&amp;query=centurylink+field" class="btn btn-primary">Open Modal Map</a>Fancybox for googlemaps -->
+<!-- <Map></Map> -->
 </template>
 
 <style scoped>
-/*  */
-/* page styling */
-
-/*  */
 .home{
   background: url('video.png');
   background-size: cover;

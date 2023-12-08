@@ -13,7 +13,10 @@
     "axios": "^1.4.0",
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
+    "google": "^2.1.0",
+    "google-map-ts-vue3": "^0.4.0",
     "jgallery": "^2.2.0",
+    "maps": "^0.3.3",
     "pinia": "^2.1.6",
     "vue": "^3.2.47",
     "vue-router": "^4.2.4"

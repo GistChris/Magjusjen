@@ -12,6 +12,7 @@ import Menu from "../Widgets/HamburgerMenu.vue";
       <!-- <source src="@/assets/video/wedding2.mp4" type="video/mp4"> -->
     </video>
     <Menu
+      text-link1="Events"
       text-link2="NewsLetter"
       text-link3="Sponsors"
       text-link4="About us"
@@ -19,7 +20,7 @@ import Menu from "../Widgets/HamburgerMenu.vue";
       text-link6="Testimonials"
     ></Menu>
     <RouterLink to="/shop">
-      <Titre text="Events" size="84px" style="color: red"></Titre>
+      <Titre text="Weddings" size="84px" style="color: red"></Titre>
     </RouterLink>
 
     <RouterLink to="/home">
@@ -32,57 +33,59 @@ import Menu from "../Widgets/HamburgerMenu.vue";
       </Button
     ></RouterLink>
   </div>
-  <div class="event-list">
-    <RouterLink to="/weddings">
-    <div class="event"><p>Weddings</p></div>
-  </RouterLink>
-  <RouterLink to="/meetings">
-    <div class="event"><p>Meetings & Banquets</p></div>
-  </RouterLink>
-  <RouterLink to="/galas">
-    <div class="event"><p>Galas & Fundraisers</p></div>
-  </RouterLink>
-  <RouterLink to="/holidays">
-    <div class="event"><p>Holidays</p></div>
-  </RouterLink>
-  <RouterLink to="/movieproductions">
-    <div class="event"><p>Movie Productions</p></div>
-  </RouterLink>
-  <RouterLink to="/tradeshows">
-    <div class="event"><p>Trade Shows</p></div>
-  </RouterLink>
-  <RouterLink to="/cocktails">
-    <div class="event"><p>Cocktails</p></div>
-  </RouterLink>
-  <RouterLink to="/kosherevents">
-    <div class="event"><p>Kosher Events</p></div>
-  </RouterLink>
+  <div class="event-wrapper">
+    <div class="event-container">
+      <div class="event-imag"><p>Imag</p></div>
+      <div class="event-description"><p>Description</p></div>
+    </div>
+    <div class="event-container">
+      <div class="event-imag"><p>Imag</p></div>
+      <div class="event-description"><p>Description</p></div>
+    </div>
   </div>
 </template>
 <style scoped>
+.event-wrapper {
+  display: flex;
+  justify-content: center;
+}
 p {
   font-size: xx-large;
   color: none;
 }
-.event-list {
+.event-container {
   display: flex;
+  width: max-content;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 100px;
-  gap: 20px;
-  /* display: inline-block; */
-}
-.event {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 10vw;
-  height: 10vw;
   background-color: white;
-  opacity: 0.5;
+  opacity: 0.8;
+  padding: 60px;
+  gap: 20px;
+  border-radius: 15px;
+  margin: 40px;
+}
+.event-imag {
+  width: 250px;
+  height: 200px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(88, 132, 221);
+  opacity: 0.8;
+  text-align: center;
+  justify-content: center;
+  color: red;
+}
+.event-description {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(88, 132, 221);
+  text-align: center;
+  justify-content: center;
+  color: red;
 }
 .events {
   display: flex;

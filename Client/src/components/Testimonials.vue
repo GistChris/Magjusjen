@@ -6,9 +6,9 @@ import Menu from "./Widgets/HamburgerMenu.vue";
 </script>
 <template>
   <div class="wrong-url">
-    <Menu text-link1="Events" text-link3="Sponsors" text-link4="About us" text-link5="Gallery"  text-link6="Testimonials" ></Menu>
+    <Menu text-link1="Events" text-link2="NewsLetter" text-link3="Sponsors" text-link4="About us" text-link5="Gallery" ></Menu>
     <RouterLink to="/shop">
-      <Titre text="Newsletter" size="84px" style="color: red"></Titre>
+      <Titre text="Testimonials" size="84px" style="color: red"></Titre>
     </RouterLink>
 
     <RouterLink to="/home">

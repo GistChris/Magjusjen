@@ -6,7 +6,16 @@ import SendingPage from "./components/Widgets/SendingPage.vue";
 import Shop from "./components/Shop.vue";
 import Home from "./components/Home.vue";
 import Events from "./components/Events/EventsList.vue";
+import Weddings from "./components/Events/Weddings.vue";
+import Galas from "./components/Events/Galas&Fundraisers.vue";
+import Meeting from "./components/Events/Meetings&Banquets.vue";
+import Cocktails from "./components/Events/Cocktails.vue";
+import Holidays from "./components/Events/Holidays.vue";
+import KosherEvents from "./components/Events/KosherEvents.vue";
+import TradeShow from "./components/Events/TradeShows.vue";
+import MovieProductions from "./components/Events/MovieProductions.vue";
 import Sponsors from "./components/Sponsors.vue";
+import Testimonials from "./components/Testimonials.vue";
 import AboutUs from "./components/AboutUs.vue";
 import Gallery from "./components/Gallery.vue";
 import Newsletter from "./components/Newsletter.vue";
@@ -34,8 +43,18 @@ const router = createRouter({
     { path: "/events", component: Events },
     { path: "/gallery", component: Gallery },
     { path: "/sponsors", component: Sponsors },
+    { path: "/testimonials", component: Testimonials },
     { path: "/newsletter", component: Newsletter },
     { path: "/aboutus", component: AboutUs },
+    { path: "/cocktails", component: Cocktails },
+    { path: "/galas", component: Galas },
+    { path: "/holidays", component: Holidays },
+    { path: "/kosherevents", component: KosherEvents },
+    { path: "/meetings", component: Meeting},
+    { path: "/movieproductions", component: MovieProductions },
+    { path: "/tradeshows", component: TradeShow },
+    { path: "/weddings", component: Weddings },
+
     ///////////////////////////////////////////////
     { path: "/shop", component: Shop },
     { path: "/send", component: SendingPage },

@@ -5,6 +5,7 @@ const props = defineProps<{
   textLink3?: string;
   textLink4?: string;
   textLink5?: string;
+  textLink6?: string;
   // buttonText?: string;
   // buttonColor?: string;
   // buttonHoverColor?: string;
@@ -49,6 +50,11 @@ const props = defineProps<{
           <a class="link"> {{ textLink5 }} </a>
         </li>
       </RouterLink>
+      <RouterLink to="/testimonials">
+        <li class="item">
+          <a class="link"> {{ textLink6 }} </a>
+        </li>
+      </RouterLink>
     </ul>
   </nav>
 </template>
@@ -81,7 +87,7 @@ const props = defineProps<{
 
 .button {
   position: relative;
-  background-color: white;
+  /* background-color: white; */
   height: 5rem;
   width: 5rem;
   /* height: 3rem;
@@ -92,12 +98,12 @@ const props = defineProps<{
   right: 5vw;
   z-index: 2000;
   /* correction */
-  box-shadow: 0 1rem 3rem black;
+  /* box-shadow: 0 1rem 3rem black; */
   text-align: center;
   cursor: pointer;
 }
 
-.background {
+.backgrounds {
   /* height: 0.1rem;
   width: 0.1rem;
   position: fixed; */
@@ -114,8 +120,10 @@ const props = defineProps<{
   /* background-image: radial-gradient(green, black); */
   /* correction background */
   /* background-image: radial-gradient(rgba(255, 255, 255, 0.2), black); */
-  background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.288));
-  backdrop-filter: blur(4px);
+
+  /* background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.288)); */
+  /* backdrop-filter: blur(4px); */
+
   z-index: 1000;
   /* correction */
   /* transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); */
@@ -127,12 +135,14 @@ const props = defineProps<{
   position: fixed;
   top: 0;
   /* correction */
-  right: -60vw;
+  /* right: -60vw; */
+  /* correction */
+  right: 120vw;
   z-index: 1500;
   opacity: 0;
   width: 0;
   /* transition: all 0.8s; */
-  transition: all 1.5s;
+  transition: all 1.8s;
 }
 
 .list {
@@ -142,7 +152,13 @@ const props = defineProps<{
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  width: 100%;
+  /* width: 100%;
+  height: 100%; */
+  padding: 100px;
+  border-radius: 25px;
+  /* background-image: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.288)); */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  backdrop-filter: blur(4px);
 }
 
 .item {
@@ -223,10 +239,12 @@ const props = defineProps<{
 }
 
 .icon::before {
-  top: -0.8rem;
+  /* correction */
+  /* top: -0.8rem; */
 }
 .icon::after {
-  top: 0.8rem;
+  /* correction */
+  /* top: 0.8rem; */
 }
 
 .button:hover icon:before {

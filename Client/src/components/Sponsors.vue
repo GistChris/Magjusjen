@@ -6,7 +6,7 @@ import Menu from "./Widgets/HamburgerMenu.vue";
 </script>
 <template>
   <div class="wrong-url">
-    <Menu text-link1="Events" text-link2="NewsLetter"  text-link4="About us" text-link5="Gallery"></Menu>
+    <Menu text-link1="Events" text-link2="NewsLetter"  text-link4="About us" text-link5="Gallery" text-link6="Testimonials"></Menu>
     <RouterLink to="/shop">
       <Titre text="Sponsors" size="84px" style="color: red;"></Titre>
     </RouterLink>
